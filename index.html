@@ -3,25 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <title>eterna</title>
   <link rel="apple-touch-icon" href="EternaIcon.png">
   <link rel="stylesheet" href="styles.css">
   <style>
     /* Full-page background */
-    body {
-      margin: 0;
-      padding: 0;
-      height: 100vh;
-      background: url('Mahakaal.png') no-repeat center center fixed;
-      background-size: cover;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-family: 'Cinzel', serif;
-      color: #fff;
-      text-shadow: 0 0 20px rgba(0,0,0,0.9);
-      flex-direction: column;
-    }
+   body {
+  margin: 0;
+  padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+  min-height: 100vh;
+  background: url('Mahakaal.png') no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Cinzel', serif;
+  color: #fff;
+  text-shadow: 0 0 20px rgba(0,0,0,0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 
     /* Dark overlay for better text contrast */
     body::before {
@@ -100,4 +103,5 @@
   <script src="script.js"></script>
 </body>
 </html>
+
 
