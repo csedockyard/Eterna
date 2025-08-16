@@ -44,11 +44,18 @@
     }
 
     h1 {
-      font-size: 3rem;
-      margin-bottom: 0.5em;
-      color: #960c0c;
-      background: linear-gradient(45deg,rgb(13, 5, 77),black);
-    }
+  font-size: 3rem;
+  margin-bottom: 0.5em;
+  font-weight: bold;
+  color: transparent;
+  background: url('Mahakaal.png') no-repeat center center fixed;
+  background-size: cover;
+  -webkit-background-clip: text;
+  background-clip: text;
+  mix-blend-mode: overlay; /* lets it merge with image tones */
+  text-shadow: 0 0 12px rgba(0,0,0,0.7); /* aura depth */
+}
+
 
     #streak {
       font-size: 5rem;
@@ -103,5 +110,6 @@
   <script src="script.js"></script>
 </body>
 </html>
+
 
 
